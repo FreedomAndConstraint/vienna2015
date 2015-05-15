@@ -140,7 +140,7 @@ Formatting for the cube
 
 /* put transparent border for the production */
 
-    border: 1px solid rgba(0, 0, 0, .3);
+    border: 1px transparent rgba(0, 0, 0, .3);
     border-radius: 10px;
 
 }
