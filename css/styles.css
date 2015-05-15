@@ -9,7 +9,7 @@
 }
 
 /*
-From original impress-demo.css 
+From original impress-demo.css
 */
 
 .fallback-message {
@@ -32,7 +32,7 @@ From original impress-demo.css
 .impress-supported .fallback-message {
     display: none;
 }
-    
+
 .step {
     position: relative;
     padding: 40px;
@@ -70,7 +70,7 @@ Formatting for the cube
     background-color: white;
     width: 700px;
     height: 700px;
-    border: 1px solid black;
+    border: 2px solid black;
     text-align: center;
     padding: 25px;
     opacity: 1;
@@ -78,7 +78,7 @@ Formatting for the cube
 
 #cube .step.active{ opacity: 1; }
 
- 
+
 #worldofviews .step {
     -webkit-box-sizing: border-box;
     -webkit-backface-visibility: hidden;
@@ -90,8 +90,8 @@ Formatting for the cube
     opacity: 0;
 }
 
-#worldofviews .step.active{ opacity: 1; } 
- 
+#worldofviews .step.active{ opacity: 1; }
+
 #scale-relations .step {
     -webkit-box-sizing: border-box;
     -webkit-backface-visibility: hidden;
@@ -103,7 +103,7 @@ Formatting for the cube
     opacity: 0;
 }
 
-#scale-relations .step.active{ opacity: 1; } 
+#scale-relations .step.active{ opacity: 1; }
 
 #synthetic_cognitive_development .step {
     -webkit-box-sizing: border-box;
@@ -116,7 +116,7 @@ Formatting for the cube
     opacity: 1;
 }
 
-#synthetic_cognitive_development .step.active{ opacity: 1; } 
+#synthetic_cognitive_development .step.active{ opacity: 1; }
 
 #visible_only_when_active .step {
     -webkit-box-sizing: border-box;
@@ -129,7 +129,7 @@ Formatting for the cube
     opacity: 0;
 }
 
-#visible_only_when_active .step.active{ opacity: 1; } 
+#visible_only_when_active .step.active{ opacity: 1; }
 
 
 
@@ -137,10 +137,10 @@ Formatting for the cube
     display: block;
     width: 1028px;
     height: 764px;
-    
+
 /* put transparent border for the production */
-    
-    border: 1px transparent rgba(0, 0, 0, .3);
+
+    border: 1px solid rgba(0, 0, 0, .3);
     border-radius: 10px;
 
 }
@@ -165,21 +165,21 @@ The fight way is to style each slide here, but I am lazy...
 */
 
 #impress h1 {
-	margin-top: 20%; 
+	margin-top: 20%;
 	text-align: center;
 	font-size: 400%;
 	font-family: Oswald-Light;
 }
 
 #impress h2 {
-	margin-top: 7%; 
+	margin-top: 7%;
 	text-align: center;
 	font-size: 400%;
 	font-family: Oswald-Light;
 }
 
 #impress h3 {
-	margin-top: 20%; 
+	margin-top: 20%;
 	text-align: center;
 	font-size: 200%;
 	font-family: Oswald-Light;
@@ -194,13 +194,13 @@ The fight way is to style each slide here, but I am lazy...
 }
 
 #impress p {
-	margin-top: 0; 
+	margin-top: 0;
 	font-size: 150%;
 	font-family: Oswald-Light;
 }
 
 #impress .footnote {
-	margin-top: 0; 
+	margin-top: 0;
 	font-size: 100%;
 	font-family: Oswald-Light;
 	margin-left: 50px;
@@ -210,7 +210,7 @@ The fight way is to style each slide here, but I am lazy...
     position: fixed;
     bottom: 50px;
     right: 50px;
-    width: 50px; 
+    width: 50px;
 }
 
 #fixedbutton-top {
@@ -249,32 +249,32 @@ The fight way is to style each slide here, but I am lazy...
 
 #impress .fullscreen-image {
   position: fixed;
-  align-content: center; 
+  align-content: center;
   top: 0;
   bottom: 0;
-  right: 0; 
-  left: 0; 
-  width: 0; 
+  right: 0;
+  left: 0;
+  width: 0;
   height:cd mn		00%;
 }
 
 #impress .fullscreen-image img {
   position: absolute;
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  margin: auto; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
   min-width: 50%;
   min-height: 100%;
 }
 
 #impress .fullscreen-image video {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   margin: auto;
   min-width: 100%;
   min-height: 50%;
@@ -287,14 +287,14 @@ The fight way is to style each slide here, but I am lazy...
   -moz-transition:    all 1s;
   -ms-transition:     all 1s;
   -o-transition:      all 1s;
-  transition:         all 1s;  
+  transition:         all 1s;
 }
 
 #impress .impress-enabled .substep.active {
   opacity: 1;
 }
 
-#impress .impress-enabled .substep.present { 
+#impress .impress-enabled .substep.present {
   color: rgb(100, 135, 195);
 }
 
@@ -538,7 +538,7 @@ The fight way is to style each slide here, but I am lazy...
     text-align: left;
 }
 /* Now we 'enable' the hint when presentation is initialized ...  */
-.impress-enabled .speaker { display: none } 
+.impress-enabled .speaker { display: none }
 /* ... and we will show it when the first step (with id 'step-1') is
     active.  */
 .impress-speaker .speaker {
