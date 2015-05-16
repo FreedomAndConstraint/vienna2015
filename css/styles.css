@@ -78,20 +78,6 @@ Formatting for the cube
 
 #cube .step.active{ opacity: 1; }
 
-
-#worldofviews .step {
-    -webkit-box-sizing: border-box;
-    -webkit-backface-visibility: hidden;
-    background-color: white;
-    width: 1028px;
-    height: 764px;
-    text-align: center;
-    padding: 25px;
-    opacity: 0;
-}
-
-#worldofviews .step.active{ opacity: 1; }
-
 #scale-relations .step {
     -webkit-box-sizing: border-box;
     -webkit-backface-visibility: hidden;
