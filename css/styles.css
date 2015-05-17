@@ -117,7 +117,18 @@ Formatting for the cube
 
 #visible_only_when_active .step.active{ opacity: 1; }
 
+#worldofviews .step {
+    -webkit-box-sizing: border-box;
+    -webkit-backface-visibility: hidden;
+    background-color: white;
+    width: 1028px;
+    height: 764px;
+    text-align: center;
+    padding: 25px;
+    opacity: 0;
+}
 
+#worldofviews .step.active{ opacity: 1; }
 
 .slide {
     display: block;
@@ -145,6 +156,151 @@ End of the lines from the original impress-demo.css
   display: none;
 }
 
+/* putting all custom styling to css:
+*/
+#forbes img {
+  margin-top:50px;
+  margin-left:10px;
+}
+
+#forbes .quote-text h2 {
+  font-size:200%;
+  margin-top:2%;
+}
+
+#hierarchy_vs_chaos .tg h2 {
+  font-size:300%;
+  margin-bottom:10%;
+}
+
+#viscous_society .txt h2 {
+  font-size:300%;
+  margin-top:0%
+}
+
+#viscous_society .fullscreen-image {
+  margin-top:150px;
+}
+
+#hierarchical_models .txt h2 {
+  font-size:300%;
+  margin-top:0%;
+  margin-bottom:5%;
+}
+
+#perspective_1 .txt h2 {
+  margin-top:2%;
+}
+
+#perspective_3 .txt h2 {
+  margin-top:2%
+}
+
+#worldview_title .txt h1 {
+  margin-top:2%;
+}
+
+#face-2 .txt h1 {
+  font-size: 350%;
+  margin-top:15%;
+}
+
+#face-2 .txt p {
+  font-size:200%;
+}
+
+#face-4 .txt h1 {
+  font-size: 350%;
+  margin-top:15%;
+}
+
+#face-4 .txt p {
+  font-size:200%;
+}
+
+#face-6 .txt h1 {
+  font-size: 350%;
+  margin-top:15%;
+}
+
+#face-6 .txt p {
+  font-size:200%;
+}
+
+#reflexivity_title .txt h1 {
+  margin-top: 8%;
+  margin-bottom: 5%;
+}
+
+#reflexivity_title .picture {
+  margin-top:0%;
+}
+
+#living_cognitive_society_title .txt h1 {
+  margin-top: 30%;
+}
+
+#family {
+  background-color: white;
+}
+
+#family .picture {
+  margin-top:7%;
+}
+
+#companies .picture {
+  margin-top:13%;
+}
+
+#scale_0 .picture {
+  text-align:center;
+  margin-top:100px;
+}
+
+#scale_1 .picture {
+  text-align:center;
+  margin-top:190px;
+  margin-left:100px;
+}
+
+#scale_2 .picture {
+  text-align:center;
+  margin-top:170px;
+  margin-left:-250px;
+}
+
+#scale_3 .picture {
+  margin-top:130px;
+  margin-left:30px;
+}
+
+#scalable_system_rotate .txt h2 {
+  margin-top:0%;
+}
+
+#interactions_among_scales_1 .txt h2 {
+   margin-top:1%;
+}
+
+#a_world_of_views .txt h2 {
+   margin-top:1%;
+}
+
+#worldview_embodiment .txt h2 {
+  margin-top:0%;
+  margin-bottom:0%;
+  font-size:300%;
+}
+
+
+#hyper-connectivity .txt h1 {
+  margin-top: 15%;
+  margin-bottom: 8%;
+}
+
+#hyper-connectivity .picture {
+  margin-top: 0%;
+}
 /*
 Now starting to style the text and slides;
 The fight way is to style each slide here, but I am lazy...
