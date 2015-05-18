@@ -1,7 +1,3 @@
-@font-face {
-	font-family: EBGaramond;
-	src: url(../fonts/EBGaramond-Regular.ttf)
-}
 
 @font-face {
 	font-family: Oswald-Light;
@@ -82,8 +78,8 @@ Formatting for the cube
     -webkit-box-sizing: border-box;
     -webkit-backface-visibility: hidden;
     background-color: white;
-    width: 1028px;
-    height: 764px;
+    width: 1024px;
+    height: 768px;
     text-align: center;
     padding: 25px;
     opacity: 0;
@@ -95,8 +91,8 @@ Formatting for the cube
     -webkit-box-sizing: border-box;
     -webkit-backface-visibility: hidden;
     background-color: white;
-    width: 1028px;
-    height: 764px;
+    width: 1024px;
+    height: 768px;
     text-align: center;
     padding: 25px;
     opacity: 1;
@@ -108,8 +104,8 @@ Formatting for the cube
     -webkit-box-sizing: border-box;
     -webkit-backface-visibility: hidden;
     background-color: white;
-    width: 1028px;
-    height: 764px;
+    width: 1024px;
+    height: 768px;
     text-align: center;
     padding: 25px;
     opacity: 0;
@@ -117,27 +113,27 @@ Formatting for the cube
 
 #visible_only_when_active .step.active{ opacity: 1; }
 
-#worldofviews .step {
+#visible_only_when_active-transparent .step {
     -webkit-box-sizing: border-box;
     -webkit-backface-visibility: hidden;
-    background-color: white;
-    width: 1028px;
-    height: 764px;
+    width: 1024px;
+    height: 768px;
     text-align: center;
     padding: 25px;
     opacity: 0;
 }
 
-#worldofviews .step.active{ opacity: 1; }
+#visible_only_when_active-transparent .step.active{ opacity: 1; }
+
 
 .slide {
     display: block;
-    width: 1028px;
-    height: 764px;
+    width: 1024px;
+    height: 768px;
 
 /* put transparent border for the production */
 
-    border: 1px transparent rgba(0, 0, 0, .3);
+    border: 1px solid rgba(0, 0, 0, .3);
     border-radius: 10px;
 
 }
@@ -158,6 +154,13 @@ End of the lines from the original impress-demo.css
 
 /* putting all custom styling to css:
 */
+
+#story_answer .clip  {
+  margin-top: 5%;
+  margin-left: -1%;
+  align-content: center;
+}
+
 #forbes img {
   margin-top:50px;
   margin-left:10px;
@@ -178,9 +181,12 @@ End of the lines from the original impress-demo.css
   margin-top:0%
 }
 
-#viscous_society .fullscreen-image {
-  margin-top:150px;
+#viscous_society .clip {
+  margin-left:-0.5%;
+  margin-top:7%;
 }
+
+
 
 #hierarchical_models .txt h2 {
   font-size:300%;
@@ -344,6 +350,10 @@ End of the lines from the original impress-demo.css
   margin-top:3%;
   margin-bottom:5%;
   font-size:350%;
+}
+
+#emerging_cognitive_agent .picture {
+  text-align:center;
 }
 
 #cognitive_development .txt {
@@ -647,25 +657,6 @@ The fight way is to style each slide here, but I am lazy...
   min-height: 50%;
 }
 
-
-#impress .impress-enabled .substep {
-  opacity: 0;
-  -webkit-transition: all 1s;
-  -moz-transition:    all 1s;
-  -ms-transition:     all 1s;
-  -o-transition:      all 1s;
-  transition:         all 1s;
-}
-
-#impress .impress-enabled .substep.active {
-  opacity: 1;
-}
-
-#impress .impress-enabled .substep.present {
-  color: rgb(100, 135, 195);
-}
-
-
 .hint {
     /*
         We hide the hint until presentation is started and from browsers not supporting
@@ -844,84 +835,3 @@ The fight way is to style each slide here, but I am lazy...
     -o-transition:      opacity 1s 3s,      -o-transform 0.5s 2.5s;
     transition:         opacity 1s 3s,         transform 0.5s 2.5s;
 }
-
-.speaker {
-    font-family: sans-serif!important;
-    display: none;
-    /*  ... and give it some fixed position and nice styles. */
-    position: fixed;
-    top: 0.5em;
-    right: 0.5em;
-    font-size: 11pt;
-    position: absolute;
-    margin: 1em;
-    padding: 1em 2em 1em 2em;
-    line-height: 1.2em;
-    z-index: 100;
-    width: 24em;
-    height: auto;
-    opacity: 0;
-    display: -webkit-box !important;
-    display: -moz-box !important;
-    display: -ms-box !important;
-    display: -o-box !important;
-    display: box !important;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    -ms-box-orient: vertical;
-    box-orient: vertical;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    -ms-box-align: center;
-    box-align: center;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    -ms-box-pack: center;
-    box-pack: center;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    background: rgba(0, 0, 0, 0.5);
-    color: #EEE;
-    -webkit-box-shadow: 0 0 1.5px #aaa;
-    -moz-box-shadow: 0 0 1.5px #aaa;
-    box-shadow: 0 0 1.5px #aaa;
-    /* ... and position it below the bottom of the screen (relative to
-        it's fixed position) */
-    -webkit-transform: translateY(1000%);
-    -moz-transform:    translateY(1000%);
-    -ms-transform:     translateY(1000%);
-    -o-transform:      translateY(1000%);
-    transform:         translateY(1000%);
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-    text-align: left;
-}
-/* Now we 'enable' the hint when presentation is initialized ...  */
-.impress-enabled .speaker { display: none }
-/* ... and we will show it when the first step (with id 'step-1') is
-    active.  */
-.impress-speaker .speaker {
-    /* We remove the transparency and position the hint in its default
-        fixed position.  */
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-    -moz-transform:    translateY(0px);
-    -ms-transform:     translateY(0px);
-    -o-transform:      translateY(0px);
-    transform:         translateY(0px);
-}
-.speaker h3 {
-  color: white!important;
-  text-decoration: underline;
-  text-align: center;
-  margin-bottom: 1em;
-}
-.speaker p, .speaker li, .speaker dd { margin-bottom: 4pt }
