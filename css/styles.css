@@ -292,6 +292,118 @@ End of the lines from the original impress-demo.css
   font-size:300%;
 }
 
+#global_brain .title {
+  margin-top: 7%;
+  font-size:350%;
+}
+
+#global_brain .image-fluid_society {
+  bottom:300px;
+  left:20px;
+  width:320px;
+}
+
+#global_brain .image-gb_head {
+  bottom:60px;
+  left:360px;
+  width:320px;
+}
+
+#global_brain .image-worldview_embodiments {
+  bottom:300px;
+  left:680px;
+  width:320px;
+}
+
+#integration .title {
+  margin-top: 2%;
+}
+
+#disintegration .title {
+  margin-top: 2%;
+}
+
+#integrated_focal_scale .title {
+  margin-top:0%;
+  margin-bottom:2%;
+  font-size:300%
+}
+
+#disintegrated_focal_scale .title {
+  margin-top:0%;
+  margin-bottom:2%;
+  font-size:300%;
+}
+
+#inter-and-exter-iority .title {
+  margin-top: 0%;
+  font-size: 350%;
+}
+
+#emerging_cognitive_agent .title {
+  margin-top:3%;
+  margin-bottom:5%;
+  font-size:350%;
+}
+
+#cognitive_development .txt {
+  font-size: 300%;
+  margin-top: 5%;
+}
+
+#scheme_of_development .picture {
+  margin-top: 5%;
+}
+
+#scd_title .title {
+  text-align: right;
+}
+
+#metastability .title {
+  margin-top: 15%;
+}
+
+#metastability .picture {
+  margin-top: 12%;
+}
+
+#no_least_energy .title {
+  margin-top: 3%;
+  margin-bottom: 0%;
+  font-size: 250%;
+}
+
+#no_least_energy .picture {
+  margin-top: 5%;
+}
+
+#no_least_energy .plus {
+  margin-top:-3%;
+  margin-bottom:0%;
+  font-size:1100%;
+}
+
+#permanent_flux .title {
+  margin-top: 5%;
+  font-size: 250%;
+}
+
+#permanent_flux .picture {
+  margin-top: 5%;
+}
+
+#progressive_determination .formula {
+ margin-top: 15%;
+}
+
+#disruptive_impact_title .title {
+  margin-top: 18%;
+  margin-bottom: 0%;
+}
+
+#disruptive_impact_title .picture {
+ margin-top:0%;
+}
 
 #hyper-connectivity .txt h1 {
   margin-top: 15%;
@@ -301,6 +413,119 @@ End of the lines from the original impress-demo.css
 #hyper-connectivity .picture {
   margin-top: 0%;
 }
+
+#accelerating_change .title {
+  margin-top: 15%;
+  margin-bottom: 8%;
+}
+
+#accelerating_change .picture {
+  margin-top:0%;
+}
+
+#agatha_cristi .title {
+  margin-top: 3%;
+}
+
+#agatha_cristi .picture {
+ margin-top:0%;
+}
+
+#agatha_cristi_1 .title {
+  margin-top: 3%;
+}
+
+#agatha_cristi_1 .picture {
+  margin-top:0%;
+}
+
+#agatha_cristi_2 .title {
+  margin-top: 3%;
+}
+
+#agatha_cristi_2 .picture {
+  margin-top:0%;
+}
+
+#nikolas_bourbaki .title {
+  padding-left: 160px;
+  text-align: right;
+}
+
+#real_corporations .picture {
+  margin-top:0%;
+}
+
+#wikipedia .picture {
+  margin-top:0%;
+}
+
+#satoshi_nakamoto .title {
+  margin-top: 5%;
+  margin-bottom: 0%;
+}
+
+#satoshi_nakamoto .picture {
+  margin-top:10%;
+}
+
+#dac .title {
+  font-size: 350%;
+  margin-top: 0%;
+  margin-bottom: 5%;
+}
+
+#scalable_worldviews .image-gb_head {
+  bottom:400px;
+  left:300px;
+  width:450px;
+}
+
+#scalable_worldviews .image-scalable_worldviews {
+ bottom:50px;
+  left:10px;
+  width:1000px;
+}
+
+#scalable_worldviews .comment {
+  bottom: 20px;
+  right: 20px;
+}
+
+#distributed_governance .image-anarchy {
+  bottom:100px;
+  right:150px;
+  width:300px;
+}
+
+#distributed_governance .image-monarchy {
+  bottom:100px;
+  left:150px;
+  width:250px;
+}
+
+#distributed_governance .image-democracy {
+  bottom:300px;
+  left:325px;
+  width:400px;
+}
+
+#distributed_governance .image-philosopher_ai {
+  bottom:510px;
+  left:450px;
+  width:120px;
+}
+
+#distributed_governance .title {
+  margin-top:24%;
+  font-size:450%;
+}
+
+#questions_page .question h2 {
+  margin-bottom: 30%;
+  margin-top:30%;
+}
+
 /*
 Now starting to style the text and slides;
 The fight way is to style each slide here, but I am lazy...
