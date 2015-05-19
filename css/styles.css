@@ -147,6 +147,7 @@ End of the lines from the original impress-demo.css
 */
 
 #story_answer .clip video {
+  width: 100%;
   margin-top: 5%;
   margin-left: -0.5%;
   align-content: center;
@@ -182,6 +183,7 @@ End of the lines from the original impress-demo.css
 }
 
 #viscous_society .clip video {
+  width: 100%;
   margin-left:-0.5%;
   margin-top:2%;
 }
