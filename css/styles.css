@@ -147,10 +147,8 @@ End of the lines from the original impress-demo.css
 */
 
 #story_answer .clip video {
-  width: 100%;
   margin-top: 5%;
   margin-left: -0.5%;
-  align-content: center;
 }
 
 #outline .lcg_title h2 {
@@ -179,13 +177,13 @@ End of the lines from the original impress-demo.css
 
 #viscous_society .txt h2 {
   font-size:300%;
-  margin-top:0%
+  margin-top:-2%;
+  margin-bottom:0%;
 }
 
 #viscous_society .clip video {
-  width: 100%;
   margin-left:-0.5%;
-  margin-top:2%;
+  margin-top:0%;
 }
 
 
