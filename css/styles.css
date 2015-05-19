@@ -91,23 +91,9 @@ Formatting for the cube
 
 #scale-relations .step.active{ opacity: 1; }
 
-#synthetic_cognitive_development .step {
-    -webkit-box-sizing: border-box;
-    -webkit-backface-visibility: hidden;
-    background-color: white;
-    width: 1028px;
-    height: 764px;
-    text-align: center;
-    padding: 25px;
-    opacity: 1;
-}
-
-#synthetic_cognitive_development .step.active{ opacity: 1; }
-
 #visible_only_when_active .step {
     -webkit-box-sizing: border-box;
     -webkit-backface-visibility: hidden;
-    background-color: white;
     width: 1028px;
     height: 764px;
     text-align: center;
@@ -142,7 +128,9 @@ Formatting for the cube
 
 }
 
-/*.slide.active{ border: solid;}*/
+.slide.active {
+  border: 1px solid rgba(0, 0, 0, 1);
+}
 
 /*
 End of the lines from the original impress-demo.css
@@ -249,10 +237,11 @@ End of the lines from the original impress-demo.css
   margin-top: 30%;
 }
 
-#family {
+/*
+family {
   background-color: white;
 }
-
+*/
 #family .picture {
   margin-top:7%;
 }
@@ -356,7 +345,7 @@ End of the lines from the original impress-demo.css
 }
 
 #emerging_cognitive_agent .picture {
-    margin-top:5%    
+    margin-top:5%
 }
 
 
@@ -636,7 +625,7 @@ The fight way is to style each slide here, but I am lazy...
   right: 0;
   left: 0;
   width: 0;
-  height:cd mn		00%;
+  height:100%;
 }
 
 #impress .fullscreen-image img {
@@ -659,24 +648,6 @@ The fight way is to style each slide here, but I am lazy...
   margin: auto;
   min-width: 100%;
   min-height: 50%;
-}
-
-
-#impress .impress-enabled .substep {
-  opacity: 0;
-  -webkit-transition: all 1s;
-  -moz-transition:    all 1s;
-  -ms-transition:     all 1s;
-  -o-transition:      all 1s;
-  transition:         all 1s;
-}
-
-#impress .impress-enabled .substep.active {
-  opacity: 1;
-}
-
-#impress .impress-enabled .substep.present {
-  color: rgb(100, 135, 195);
 }
 
 
@@ -859,83 +830,3 @@ The fight way is to style each slide here, but I am lazy...
     transition:         opacity 1s 3s,         transform 0.5s 2.5s;
 }
 
-.speaker {
-    font-family: sans-serif!important;
-    display: none;
-    /*  ... and give it some fixed position and nice styles. */
-    position: fixed;
-    top: 0.5em;
-    right: 0.5em;
-    font-size: 11pt;
-    position: absolute;
-    margin: 1em;
-    padding: 1em 2em 1em 2em;
-    line-height: 1.2em;
-    z-index: 100;
-    width: 24em;
-    height: auto;
-    opacity: 0;
-    display: -webkit-box !important;
-    display: -moz-box !important;
-    display: -ms-box !important;
-    display: -o-box !important;
-    display: box !important;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    -ms-box-orient: vertical;
-    box-orient: vertical;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    -ms-box-align: center;
-    box-align: center;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    -ms-box-pack: center;
-    box-pack: center;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    background: rgba(0, 0, 0, 0.5);
-    color: #EEE;
-    -webkit-box-shadow: 0 0 1.5px #aaa;
-    -moz-box-shadow: 0 0 1.5px #aaa;
-    box-shadow: 0 0 1.5px #aaa;
-    /* ... and position it below the bottom of the screen (relative to
-        it's fixed position) */
-    -webkit-transform: translateY(1000%);
-    -moz-transform:    translateY(1000%);
-    -ms-transform:     translateY(1000%);
-    -o-transform:      translateY(1000%);
-    transform:         translateY(1000%);
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-    text-align: left;
-}
-/* Now we 'enable' the hint when presentation is initialized ...  */
-.impress-enabled .speaker { display: none }
-/* ... and we will show it when the first step (with id 'step-1') is
-    active.  */
-.impress-speaker .speaker {
-    /* We remove the transparency and position the hint in its default
-        fixed position.  */
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-    -moz-transform:    translateY(0px);
-    -ms-transform:     translateY(0px);
-    -o-transform:      translateY(0px);
-    transform:         translateY(0px);
-}
-.speaker h3 {
-  color: white!important;
-  text-decoration: underline;
-  text-align: center;
-  margin-bottom: 1em;
-}
-.speaker p, .speaker li, .speaker dd { margin-bottom: 4pt }
