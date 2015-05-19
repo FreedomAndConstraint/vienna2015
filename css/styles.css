@@ -153,6 +153,16 @@ End of the lines from the original impress-demo.css
   align-content: center;
 }
 
+#outline .lcg_title h2 {
+  margin-top: 5%;
+  margin-bottom:10%;
+}
+
+#outline .lcg_lcg {
+  padding-left:15%;
+  padding-right:15%;
+}
+
 #forbes img {
   margin-top:50px;
   margin-left:10px;
@@ -252,7 +262,7 @@ family {
 
 #scale_0 .picture {
   text-align:center;
-  margin-top:100px;
+  margin-top:200px;
 }
 
 #scale_1 .picture {
