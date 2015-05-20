@@ -337,6 +337,18 @@ family {
   font-size:300%
 }
 
+#focal_scale_shading .title {
+  margin-top:0%;
+  margin-bottom:2%;
+  font-size:300%
+}
+
+#focal_scale_shading .focal_scale_shade {
+  bottom:100px;
+  left:220px;
+  width:400px;
+}
+
 #disintegrated_focal_scale .title {
   margin-top:0%;
   margin-bottom:2%;
@@ -376,8 +388,14 @@ family {
   margin-top: 15%;
 }
 
-#metastability .picture {
+#metastability .image-classical {
   margin-top: 12%;
+  margin-left: 7%;
+}
+
+#metastability .image-nasdaq {
+  margin-top: 12%;
+  margin-left: 50%;
 }
 
 #no_least_energy .title {
@@ -464,6 +482,12 @@ family {
   padding-left: 160px;
   text-align: right;
 }
+
+#nikolas_bourbaki .books {
+  padding-left: 160px;
+  text-align: right;
+}
+
 
 #real_corporations .picture {
   margin-top:0%;
