@@ -247,11 +247,10 @@ End of the lines from the original impress-demo.css
   margin-top: 30%;
 }
 
-/*
-family {
-  background-color: white;
+#individual .picture {
+  margin-top: 5%;
 }
-*/
+
 #family .picture {
   margin-top:7%;
 }
