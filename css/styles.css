@@ -15,12 +15,10 @@ From original impress-demo.css
 /* Force GPU rendering
 http://blog.teamtreehouse.com/increase-your-sites-performance-with-hardware-accelerated-css
 */
-#impress {
-   -webkit-transform: translate3d(0, 0, 0);
-   -moz-transform: translate3d(0, 0, 0);
-   -ms-transform: translate3d(0, 0, 0);
-   transform: translate3d(0, 0, 0);
-}
+-webkit-transform: translate3d(0, 0, 0);
+-moz-transform: translate3d(0, 0, 0);
+-ms-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
 
 .fallback-message {
     font-family: sans-serif;
