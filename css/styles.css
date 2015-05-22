@@ -15,10 +15,6 @@ From original impress-demo.css
 /* Force GPU rendering
 http://blog.teamtreehouse.com/increase-your-sites-performance-with-hardware-accelerated-css
 */
--webkit-transform: translate3d(0, 0, 0);
--moz-transform: translate3d(0, 0, 0);
--ms-transform: translate3d(0, 0, 0);
-transform: translate3d(0, 0, 0);
 
 .fallback-message {
     font-family: sans-serif;
@@ -779,9 +775,6 @@ The fight way is to style each slide here, but I am lazy...
     -o-transition:      opacity 1s 5s,      -o-transform 0.5s 4.5s;
     transition:         opacity 1s 5s,         transform 0.5s 4.5s;
 }
-
-.impress-enabled          { pointer-events: none }
-.impress-enabled #impress { pointer-events: auto }
 
 .question {
     /*
