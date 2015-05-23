@@ -8,14 +8,6 @@
 	src: url(../fonts/Oswald-Light.ttf)
 }
 
-/*
-From original impress-demo.css
-*/
-
-/* Force GPU rendering
-http://blog.teamtreehouse.com/increase-your-sites-performance-with-hardware-accelerated-css
-*/
-
 .fallback-message {
     font-family: sans-serif;
     line-height: 1.3;
@@ -149,8 +141,16 @@ End of the lines from the original impress-demo.css
   display: none;
 }
 
+#impress .center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 /* putting all custom styling to css:
 */
+
+
 
 #story_answer .clip video {
   margin-top: 5%;
@@ -327,7 +327,7 @@ End of the lines from the original impress-demo.css
 }
 
 #integration .title {
-  margin-top: 2%;
+  margin-top: 1%;
 }
 
 #disintegration .title {
