@@ -112,6 +112,24 @@ Formatting for the cube
 
 #worldofviews .step.active{ opacity: 1; }
 
+/* special treatment for handouts*/
+
+.handout .step {
+    -webkit-box-sizing: border-box;
+    -webkit-backface-visibility: hidden;
+    width: 1028px;
+    height: 764px;
+    text-align: center;
+    padding: 25px;
+    opacity: 0;
+}
+
+.handout .step.active{ opacity: 1; }
+
+.notes {
+    font-size:150%;
+}
+
 .slide {
     display: block;
     width: 1028px;
@@ -135,10 +153,6 @@ End of the lines from the original impress-demo.css
 
 #impress:not(.impress-not-supported) .step{
     opacity:0.4;
-}
-
-#impress .step .notes{
-  display: none;
 }
 
 #impress .center {
@@ -601,6 +615,12 @@ The fight way is to style each slide here, but I am lazy...
 }
 
 #impress p {
+	margin-top: 0;
+	font-size: 150%;
+	font-family: Oswald-Light;
+}
+
+#impress li {
 	margin-top: 0;
 	font-size: 150%;
 	font-family: Oswald-Light;
