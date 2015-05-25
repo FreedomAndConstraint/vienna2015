@@ -721,14 +721,14 @@ The fight way is to style each slide here, but I am lazy...
     position: fixed;
     left: 0;
     right: 0;
-    bottom: 200px;
+    bottom: 0;
 
     background: rgba(0,0,0,0.5);
     color: #EEE;
     text-align: center;
 
     font-size: 30px;
-    padding: 20px;
+    padding: 10px;
 
     z-index: 100;
 
