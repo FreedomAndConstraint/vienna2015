@@ -1,0 +1,382 @@
+@font-face {
+	font-family: EBGaramond;
+	src: url(../fonts/EBGaramond-Regular.ttf)
+}
+
+@font-face {
+	font-family: Oswald-Light;
+	src: url(../fonts/Oswald-Light.ttf)
+}
+
+.step {
+    position: relative;
+    padding: 30px;
+    margin: 20px auto;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    -ms-box-sizing:     border-box;
+    -o-box-sizing:      border-box;
+    box-sizing:         border-box;
+}
+
+.impress-enabled .step {
+    margin: 0;
+    opacity: 1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
+}
+
+#impress .step.active{
+   opacity:1;
+}
+
+/*
+Formatting for the cube
+*/
+
+/* special treatment for handouts*/
+
+.handout .step {
+    -webkit-box-sizing: border-box;
+    -webkit-backface-visibility: hidden;
+    height: 1028px;
+    width: 764px;
+    text-align: left;
+    padding: 20px;
+    opacity: 0;
+}
+
+.handout .step.active{ opacity: 1; }
+
+.notes {
+    font-size:150%;
+}
+
+.slide {
+    display: block;
+
+/* put transparent border for the production */
+
+    border: 1px transparent rgba(0, 0, 0, .3);
+    border-radius: 10px;
+}
+
+#impress:not(.impress-not-supported) .step{
+    opacity:0.4;
+}
+
+#impress .center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/*
+Now starting to style the text and slides;
+The fight way is to style each slide here, but I am lazy...
+*/
+
+#impress h1 {
+	margin-top: 20%;
+	text-align: center;
+	font-size: 400%;
+	font-family: Oswald-Light;
+}
+
+#impress h2 {
+	margin-top: 7%;
+	text-align: center;
+	font-size: 400%;
+	font-family: Oswald-Light;
+}
+
+#impress h3 {
+	margin-top: 20%;
+	text-align: center;
+	font-size: 200%;
+	font-family: Oswald-Light;
+}
+
+#impress h4 {
+	margin-top: 2%;
+	margin-bottom: 10%;
+	text-align: center;
+	font-size: 300%;
+	font-family: Oswald-Light;
+}
+
+#impress p {
+	margin-top: 0;
+	font-size: 150%;
+	font-family: Oswald-Light;
+}
+
+#impress li {
+	margin-top: 0;
+	font-size: 150%;
+	font-family: Oswald-Light;
+}
+
+#impress .footnote {
+	margin-top: 0;
+	font-size: 100%;
+	font-family: Oswald-Light;
+	margin-left: 50px;
+}
+
+#fixedbutton {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+}
+
+#fixedbutton-top {
+    position: fixed;
+    top: 150px;
+    right: 50px;
+    width: 50px;
+}
+#fixedimage {
+    position: fixed;
+}
+
+#impress .quote-main {
+	margin-top: 20%;
+	text-align: center;
+	font-size: 150%;
+	font-family: Oswald-Light;
+}
+
+#impress .quote-source {
+	text-align: right;
+	margin-right: 50px;
+	font-size: 100%;
+	font-family: Oswald-Light;
+}
+
+#impress img {
+	vertical-align: middle;
+}
+
+#impress .center-image {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#impress .fullscreen-image {
+  position: fixed;
+  align-content: center;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 0;
+  height:100%;
+}
+
+#impress .fullscreen-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 100%;
+}
+
+#impress .fullscreen-image video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 100%;
+  min-height: 50%;
+}
+
+
+.hint {
+    /*
+        We hide the hint until presentation is started and from browsers not supporting
+        impress.js, as they will have a linear scrollable view ...
+    */
+    display: none;
+
+    /*
+        ... and give it some fixed position and nice styles.
+    */
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: rgba(0,0,0,0.5);
+    color: #EEE;
+    text-align: center;
+
+    font-size: 30px;
+    padding: 10px;
+
+    z-index: 100;
+
+    /*
+        By default we don't want the hint to be visible, so we make it transparent ...
+    */
+    opacity: 0;
+
+    /*
+        ... and position it below the bottom of the screen (relative to it's fixed position)
+    */
+    -webkit-transform: translateY(400px);
+    -moz-transform:    translateY(400px);
+    -ms-transform:     translateY(400px);
+    -o-transform:      translateY(400px);
+    transform:         translateY(400px);
+
+    /*
+        Now let's imagine that the hint is visible and we want to fade it out and move out
+        of the screen.
+        So we define the transition on the opacity property with 1s duration and another
+        transition on transform property delayed by 1s so it will happen after the fade out
+        on opacity finished.
+        This way user will not see the hint moving down.
+    */
+    -webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
+    -moz-transition:    opacity 1s,    -moz-transform 0.5s 1s;
+    -ms-transition:     opacity 1s,     -ms-transform 0.5s 1s;
+    -o-transition:      opacity 1s,      -o-transform 0.5s 1s;
+    transition:         opacity 1s,         transform 0.5s 1s;
+}
+
+/*
+    Now we 'enable' the hint when presentation is initialized ...
+*/
+.impress-enabled .hint { display: block }
+
+/*
+    ... and we will show it when the first step (with id 'bored') is active.
+*/
+.impress-on-title_page .hint {
+    /*
+        We remove the transparency and position the hint in its default fixed
+        position.
+    */
+    opacity: 1;
+
+    -webkit-transform: translateY(0px);
+    -moz-transform:    translateY(0px);
+    -ms-transform:     translateY(0px);
+    -o-transform:      translateY(0px);
+    transform:         translateY(0px);
+
+    /*
+        Now for fade in transition we have the oposite situation from the one
+        above.
+        First after 4.5s delay we animate the transform property to move the hint
+        into its correct position and after that we fade it in with opacity
+        transition.
+    */
+    -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s 4.5s;
+    -moz-transition:    opacity 1s 5s,    -moz-transform 0.5s 4.5s;
+    -ms-transition:     opacity 1s 5s,     -ms-transform 0.5s 4.5s;
+    -o-transition:      opacity 1s 5s,      -o-transform 0.5s 4.5s;
+    transition:         opacity 1s 5s,         transform 0.5s 4.5s;
+}
+
+.question {
+    /*
+        We hide the hint until presentation is started and from browsers not supporting
+        impress.js, as they will have a linear scrollable view ...
+    */
+    display: none;
+
+    /*
+        ... and give it some fixed position and nice styles.
+    */
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+
+    background: rgba(0,0,0,0.5);
+    color: #EEE;
+    text-align: center;
+
+    font-size: 30px;
+    padding: 20px;
+
+    z-index: 100;
+
+    /*
+        By default we don't want the hint to be visible, so we make it transparent ...
+    */
+    opacity: 0;
+
+    /*
+        ... and position it below the bottom of the screen (relative to it's fixed position)
+    */
+    -webkit-transform: translateY(400px);
+    -moz-transform:    translateY(400px);
+    -ms-transform:     translateY(400px);
+    -o-transform:      translateY(400px);
+    transform:         translateY(400px);
+
+    /*
+        Now let's imagine that the hint is visible and we want to fade it out and move out
+        of the screen.
+        So we define the transition on the opacity property with 1s duration and another
+        transition on transform property delayed by 1s so it will happen after the fade out
+        on opacity finished.
+        This way user will not see the hint moving down.
+    */
+    -webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
+    -moz-transition:    opacity 1s,    -moz-transform 0.5s 1s;
+    -ms-transition:     opacity 1s,     -ms-transform 0.5s 1s;
+    -o-transition:      opacity 1s,      -o-transform 0.5s 1s;
+    transition:         opacity 1s,         transform 0.5s 1s;
+}
+
+/*
+    Now we 'enable' the hint when presentation is initialized ...
+*/
+.impress-enabled .question { display: block }
+
+/*
+    ... and we will show it when the first step (with id 'bored') is active.
+*/
+.impress-on-questions_page .question {
+    /*
+        We remove the transparency and position the hint in its default fixed
+        position.
+    */
+    opacity: 1;
+
+    -webkit-transform: translateY(0px);
+    -moz-transform:    translateY(0px);
+    -ms-transform:     translateY(0px);
+    -o-transform:      translateY(0px);
+    transform:         translateY(0px);
+
+    /*
+        Now for fade in transition we have the oposite situation from the one
+        above.
+        First after 4.5s delay we animate the transform property to move the hint
+        into its correct position and after that we fade it in with opacity
+        transition.
+    */
+    -webkit-transition: opacity 1s 3s, -webkit-transform 0.5s 2.5s;
+    -moz-transition:    opacity 1s 3s,    -moz-transform 0.5s 2.5s;
+    -ms-transition:     opacity 1s 3s,     -ms-transform 0.5s 2.5s;
+    -o-transition:      opacity 1s 3s,      -o-transform 0.5s 2.5s;
+    transition:         opacity 1s 3s,         transform 0.5s 2.5s;
+}
+
