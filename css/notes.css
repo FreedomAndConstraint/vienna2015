@@ -44,6 +44,7 @@ Formatting for the cube
 .handout .step {
     -webkit-box-sizing: border-box;
     -webkit-backface-visibility: hidden;
+    height: 1280px;
     width: 768px;
     text-align: left;
     padding: 10px;
