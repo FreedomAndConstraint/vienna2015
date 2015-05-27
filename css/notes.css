@@ -46,7 +46,7 @@ Formatting for the cube
     -webkit-backface-visibility: hidden;
     /*it is better to comment out the following for the computer
     it is needed for the mobile phone...*/
-    /*height: 1280px;*/
+    height: 1280px;
     width: 768px;
     text-align: left;
     padding: 10px;
