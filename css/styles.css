@@ -387,14 +387,20 @@ End of the lines from the original impress-demo.css
     margin-top:5%
 }
 
-
 #cognitive_development .txt {
   font-size: 300%;
   margin-top: 5%;
 }
 
+#scheme_of_development .title {
+  margin-top:0%;
+  margin-bottom:0%;
+  font-size:300%;
+}
+
 #scheme_of_development .picture {
   margin-top: 5%;
+  text-align:center;
 }
 
 #scd_title .title {
